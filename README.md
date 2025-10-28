@@ -44,3 +44,9 @@ git rebase main
 ## References
 
 - https://www.conventionalcommits.org/en/v1.0.0/
+
+## Feature B ( Ticket 345 )
+
+> Ticket 345, Feature B
+
+> Ticket 345, Feature B line 1
