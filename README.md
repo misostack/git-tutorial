@@ -65,3 +65,4 @@ Squash
 
 - https://www.conventionalcommits.org/en/v1.0.0/
 - https://cli.github.com/manual/gh_pr_create
+- https://keepachangelog.com/en/1.1.0/
