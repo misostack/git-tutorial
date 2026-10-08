@@ -56,6 +56,26 @@ git checkout -b release/v1.0.0
 git push origin release/v1.0.0
 ```
 
+#### Hotfix branches
+
+Maintenance or “hotfix” branches are used to quickly patch production releases. Hotfix branches are a lot like release branches and feature branches except they're based on main instead of develop. This is the only branch that should fork directly off of main. As soon as the fix is complete, it should be merged into both main and develop (or the current release branch), and main should be tagged with an updated version number.
+
+```sh
+git checkout main
+git pull origin main
+git checkout -b hotfix/type-id-title
+git push origin hotfix/type-id-title
+
+git checkout main
+git merge hotfix/type-id-title
+git push origin main
+
+git checkout develop
+git merge hotfix/type-id-title
+git push origin develop
+
+```
+
 ### Naming conventions
 
 - `main`: production releases
