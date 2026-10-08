@@ -11,7 +11,7 @@ The idea is starting with 2 branches:
 
 ### Supporting branches
 
-**Feature branches**
+#### Feature branches
 
 - May branch off from: develop
 - Must merge back into: develop
@@ -38,7 +38,22 @@ gh pr create --base develop  --title "feat(api): #123 secure access for applicat
 
 ```sh
 git checkout develop
+git pull origin develop
 git merge --no-ff feature/fr-001-authentication
+```
+
+#### Release branches
+
+Once develop has acquired enough features for a release, fork a release branch off of develop.
+From now on, no new features can be added after this point—only bug fixes, documentation generation, and other release-oriented tasks should go in this branch.
+
+Once it's ready to ship, the release branch gets merged into main and tagged with a version number.
+
+```sh
+git checkout develop
+git pull origin develop
+git checkout -b release/v1.0.0
+git push origin release/v1.0.0
 ```
 
 ### Naming conventions
