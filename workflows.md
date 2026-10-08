@@ -56,6 +56,23 @@ git checkout -b release/v1.0.0
 git push origin release/v1.0.0
 ```
 
+### Create merge requests for release branch to both of develop and main
+
+```sh
+git checkout main
+git pull origin main
+git merge release/v1.0.0
+git push origin main
+git tag v1.0.0
+git push v1.0.0
+
+gh release create v1.0.0
+
+git checkout develop
+git merge release/v1.0.0
+git push origin develop
+```
+
 ### Naming conventions
 
 - `main`: production releases
