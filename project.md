@@ -19,7 +19,7 @@ User has 2 types of role:
 
 ### 2. User Management
 
-- Admin create create new user with email and password
+- Admin can create new user with email and password
 - Admin can manage all users
 - Admin can change user's password
 - Admin can block a user
