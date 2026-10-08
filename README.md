@@ -41,6 +41,24 @@ git rebase main
 
 > Ticket 123, line 5
 
+## Difference between merge mechanics
+
+Initial state
+
+![alt text](image-1.png)
+
+Fast Forward
+
+![alt text](image-2.png)
+
+No-FF
+
+![alt text](image-3.png)
+
+Squash
+
+![alt text](image-4.png)
+
 ## References
 
 - https://www.conventionalcommits.org/en/v1.0.0/
