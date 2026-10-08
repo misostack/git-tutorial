@@ -23,6 +23,17 @@ The idea is starting with 2 branches:
 git checkout -b feature/fr-001-authentication
 ```
 
+**create pr**
+
+```sh
+gh pr create --base develop  --title "feat(api): #123 secure access for application" --body "
+## Issues
+    - feat(api) #123 secure access for application
+## Impacted packages
+    - api
+" --assignee "@me,@copilot"
+```
+
 **finishing a feature branch**
 
 ```sh

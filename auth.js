@@ -12,9 +12,10 @@ const users = [
 ];
 
 const authenticateUser = (username, password) => {
-  return users.find(
+  const user = users.find(
     (user) => user.username === username && user.password === password,
   );
+  return user && { id: user.id, username: user.username };
 };
 
 module.exports = {
