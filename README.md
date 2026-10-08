@@ -44,3 +44,4 @@ git rebase main
 ## References
 
 - https://www.conventionalcommits.org/en/v1.0.0/
+- https://cli.github.com/manual/gh_pr_create
