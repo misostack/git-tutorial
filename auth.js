@@ -1,3 +1,5 @@
+/* this module offers user authentication functionality to verify user credentials which will be used for other features later */
+
 const users = process.env.USER_DATA ? JSON.parse(process.env.USER_DATA) : [];
 
 const authenticateUser = (username, password) => {
