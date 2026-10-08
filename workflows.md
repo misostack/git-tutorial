@@ -58,11 +58,15 @@ git push origin release/v1.0.0
 
 ### Naming conventions
 
-- main : production releases
-- develop: next release
-- feature branches: feature/
-- release branches: release/
-- support branches: support/
+- `main`: production releases
+- `develop`: integration branch for the next release
+- `feature/` or `feat/`: new features
+- `release/`: release preparation and stabilization
+- `support/`: long-term maintenance of older released versions
+- `bugfix/` or `fix/`: non-urgent bug fixes
+- `hotfix/`: critical production patches that bypass the normal release flow
+- `chore/`: maintenance tasks such as dependency or documentation updates
+- `refactor/`: code improvements that neither fix bugs nor add features
 
 ## References
 
