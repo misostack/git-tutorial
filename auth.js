@@ -1,15 +1,4 @@
-const users = [
-  {
-    id: 1,
-    username: "user1",
-    password: "password1",
-  },
-  {
-    id: 2,
-    username: "user2",
-    password: "password2",
-  },
-];
+const users = process.env.USER_DATA ? JSON.parse(process.env.USER_DATA) : [];
 
 const authenticateUser = (username, password) => {
   const user = users.find(
